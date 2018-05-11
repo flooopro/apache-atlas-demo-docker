@@ -16,8 +16,7 @@ RUN git clone http://git.apache.org/atlas.git -b master && \
         mkdir -p atlas-bin && \
         tar xzf /root/atlas/distro/target/*bin.tar.gz --strip-components 1 -C /root/atlas-bin && \
         rm -rf /root/atlas && \
-        rm -rf /root/.m2 && \
-        /root/atlas-bin/bin/quick_start.py
+        rm -rf /root/.m2
         
 EXPOSE 21000
 
