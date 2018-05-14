@@ -6,7 +6,7 @@ ENV PATH /root/atlas-bin/bin:/usr/java/bin:/usr/local/apache-maven/bin:/usr/loca
 ENV MANAGE_LOCAL_SOLR true
 ENV MANAGE_LOCAL_HBASE true
 RUN apt-get update && \
-        apt-get install -y git python openjdk-8-jdk maven && \
+        apt-get install -y git python openjdk-8-jdk maven lsof net-tools && \
         apt-get upgrade -y && \
         rm -rf /var/lib/apt/lists/* && \
         mkdir -p /root/atlas-bin
